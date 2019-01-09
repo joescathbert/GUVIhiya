@@ -6,3 +6,5 @@ for k in range(0, len(arr)):
         an.append(k)
 for k in ans:
     print(k, end=" ")
+if len(ans) == 0:
+    print('-1')
