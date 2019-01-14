@@ -1,6 +1,9 @@
 def newfunc(s, a):
-    if len(s) == 1 or (len(s) == 2 and int(s) < 27):
+    if len(s) == 1:
         a += 1
+        return a
+    elif len(s) == 2 and int(s) < 27:
+        a += 2
         return a
     else:
         for i in range(1,3):
