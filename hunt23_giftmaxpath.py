@@ -23,5 +23,8 @@ m, n = list(map(int, input().split()))
 for i in range(m):
   arr.append([int(x) for x in input().split()])
 ar = (['r']*(n-1)) + (['b']*(m-1))
-a,b = recur([],arr,ar,0,len(ar),0)
-print(b)
+if m == 1 and n == 1:
+  print(arr[0][0])
+else:
+  a,b = recur([],arr,ar,0,len(ar),0)
+  print(b)
