@@ -16,7 +16,7 @@ digi = input()
 a = [int("".join(list(map(str,i)))) for i in recur([],list(map(int,list(digi))),0,len(digi))]
 a.sort()
 if (a.index(int(digi))+1) >= len(a):
-    print('impossibe')
+    print('impossible')
 else:
     print(a[a.index(int(digi))+1])
     
