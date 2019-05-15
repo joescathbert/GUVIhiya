@@ -13,3 +13,4 @@ for i in range(len(st1)):
         print(i%5, i//5)
         print((i+len(sub)-1)%5, (i+len(sub)-1)//5)
         break
+else: print(0)
